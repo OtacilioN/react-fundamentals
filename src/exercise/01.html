@@ -20,13 +20,13 @@
 
 <html>
     <body>
-        <div id="root" />
+        <script type="module">
+            const root = document.createElement("div")
+            document.body.append(root)
+            const div = document.createElement("div")
+            div.textContent = "Hello World"
+            div.className = "container"
+            root.append(div)
+        </script>
     </body>
-    <script type="module">
-        const div = document.createElement("div")
-        div.textContent = "Hello World"
-        div.className = "container"
-        const root = document.getElementById("root")
-        root.append(div)
-    </script>
 </html>
