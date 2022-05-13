@@ -11,7 +11,7 @@
     const hello = React.createElement('span', {  children: "Hello " })
     const world = React.createElement('span', { children: "World" })
      
-    const reactDiv = React.createElement('h1', {className: "container", children: [hello, world]})
+    const reactDiv = React.createElement('h1', {className: "container"}, hello, world)
     ReactDOM.render(reactDiv, rootElement)
   </script>
 </body>
