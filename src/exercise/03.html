@@ -10,11 +10,10 @@
   <script type="text/babel">
 
     const className = "container"
-    const content = "Hello World"
+    const children = "Hello World"
+    const props = {children, className}
     const element = (
-      <div className={className}>
-        {content}
-      </div>
+      <div {...props} />
     )
 
     ReactDOM.render(element, document.getElementById('root'))
